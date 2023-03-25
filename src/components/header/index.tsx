@@ -6,7 +6,12 @@ export function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   useEffect(() => {
-    (selectHtmlElements("#navbar") as any)?.classList?.toggle("navbar-mobile");
+    if (window.innerWidth <= 991) {
+      (selectHtmlElements("#navbar") as any)?.classList?.toggle(
+        "navbar-mobile"
+      );
+    }
+    /* (selectHtmlElements("#navbar") as any)?.classList?.toggle("navbar-mobile"); */
   }, [showMobileMenu]);
 
   useEffect(() => {
