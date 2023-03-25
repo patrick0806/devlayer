@@ -11,7 +11,6 @@ export function Header() {
         "navbar-mobile"
       );
     }
-    /* (selectHtmlElements("#navbar") as any)?.classList?.toggle("navbar-mobile"); */
   }, [showMobileMenu]);
 
   useEffect(() => {

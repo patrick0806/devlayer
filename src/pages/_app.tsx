@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/styles/globals.css";
@@ -10,4 +12,8 @@ export default function App({ Component, pageProps }: AppProps) {
     import("bootstrap/dist/js/bootstrap" as any);
   }, []);
   return <Component {...pageProps} />;
+}
+
+if (typeof window !== "undefined") {
+  AOS.init({ duration: 500 });
 }
