@@ -1,0 +1,10 @@
+export { AboutUs } from "./about";
+export { CallToAction } from "./callToAction";
+export { Contact } from "./contact";
+export { FAQ } from "./faq";
+export { Footer } from "./footer";
+export { Header } from "./header";
+export { Hero } from "./hero";
+export { Portifolio } from "./portifolio";
+export { Services } from "./services";
+export { Team } from "./team";
